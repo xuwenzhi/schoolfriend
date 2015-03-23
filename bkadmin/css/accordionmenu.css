@@ -1,0 +1,55 @@
+.accordion {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; MARGIN: 0px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; PADDING-LEFT: 0px; OUTLINE-WIDTH: medium; PADDING-RIGHT: 0px; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0px
+}
+.accordion UL {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; MARGIN: 0px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; PADDING-LEFT: 0px; OUTLINE-WIDTH: medium; PADDING-RIGHT: 0px; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0px
+}
+.accordion LI {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; MARGIN: 0px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; PADDING-LEFT: 0px; OUTLINE-WIDTH: medium; PADDING-RIGHT: 0px; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0px
+}
+.accordion A {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; MARGIN: 0px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; PADDING-LEFT: 0px; OUTLINE-WIDTH: medium; PADDING-RIGHT: 0px; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0px
+}
+.accordion SPAN {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; MARGIN: 0px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; PADDING-LEFT: 0px; OUTLINE-WIDTH: medium; PADDING-RIGHT: 0px; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0px
+}
+.accordion LI {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+
+.accordion LI > A {
+	POSITION: relative; MIN-WIDTH: 100px; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 10px; DISPLAY: block; FONT: 13px/32px ËÎÌו, sans-serif; BACKGROUND: #DDE9F5; HEIGHT: 32px; COLOR: #000000; TEXT-DECORATION: none; PADDING-TOP: 0px; text-shadow: 0px 1px 0px rgba(0, 0, 0, .35); -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, .1), 0px 1px 0px 0px rgba(0, 0, 0, .1); -moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, .1), 0px 1px 0px 0px rgba(0, 0, 0, .1); box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, .1), 0px 1px 0px 0px rgba(0, 0, 0, .1)
+}
+.accordion LI > A SPAN {
+	POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: block; FONT: bold 12px/18px Arial, sans-serif; BACKGROUND: #404247; TOP: 7px; RIGHT: 0px; MARGIN-RIGHT: 10px; PADDING-TOP: 0px; -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .2), 1px 1px 1px rgba(255, 255, 255, .1); -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .2), 1px 1px 1px rgba(255, 255, 255, .1); box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .2), 1px 1px 1px rgba(255, 255, 255, .1); -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px
+}
+.accordion > LI > A:before {
+	BACKGROUND-IMAGE: url(images/bg.png); POSITION: absolute; MARGIN: 4px 8px; WIDTH: 24px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 0px 0px; HEIGHT: 24px; CONTENT: ''; TOP: 0px; LEFT: 0px
+}
+.accordion LI.files > A:before {
+	BACKGROUND-POSITION: 0px 0px
+}
+.accordion LI.mail > A:before {
+	BACKGROUND-POSITION: -24px 0px
+}
+.accordion LI.cloud > A:before {
+	BACKGROUND-POSITION: -48px 0px
+}
+.accordion LI.sign > A:before {
+	BACKGROUND-POSITION: -72px 0px
+}
+.sub-menu LI A {
+	BORDER-BOTTOM: #c9c9c9 1px solid; BACKGROUND: #e5e5e5; COLOR: #797979; text-shadow: 1px 1px 0px rgba(255, 255, 255, .2); -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, .1), 0px 1px 0px 0px rgba(0, 0, 0, .1); -moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, .1), 0px 1px 0px 0px rgba(0, 0, 0, .1); box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, .1), 0px 1px 0px 0px rgba(0, 0, 0, .1)
+}
+.sub-menu LI:hover A {
+	BACKGROUND: #efefef
+}
+.sub-menu LI > A SPAN {
+	BORDER-BOTTOM: #c9c9c9 1px solid; BORDER-LEFT: #c9c9c9 1px solid; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #797979; BORDER-TOP: #c9c9c9 1px solid; BORDER-RIGHT: #c9c9c9 1px solid; text-shadow: 1px 1px 0px rgba(255, 255, 255, .2); -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none
+}
+.sub-menu EM {
+	POSITION: absolute; FONT: 10px/32px Arial, sans-serif; COLOR: #a6a6a6; MARGIN-LEFT: 14px; TOP: 0px; LEFT: 0px
+}
+.accordion LI > .sub-menu {
+	DISPLAY: none
+}

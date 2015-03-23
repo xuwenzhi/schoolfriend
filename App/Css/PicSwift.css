@@ -1,0 +1,158 @@
+/*滑动截图1*/
+ .ifrswipt0 
+ {
+ 	width:223px;height:300px;
+ 	margin:0 auto;position:relative;
+ 	padding:3px 20px 3px 20px;
+ }
+ .ifrswipt0 .inner0
+ {
+ 	width:223px;height:300px;
+ 	overflow:visible;position:relative
+ }
+ /*外侧的大div  实际上 这个div  是根据有多少图片而设定的，这个应该通过JS来确定大小   */
+ .ifrswipt0 ul 
+ {
+ 	width:100050px;list-style:none;
+ 	overflow:hidden;position:absolute;
+ 	top:0px;left:0;margin:0;padding:0;
+ }
+ /*  这个li是 图片的最亲密的包装  */
+ .ifrswipt0 li 
+ {
+ 	width:223px;height:300px;
+ 	display:inline;line-height:168px;
+ 	float:left;position:relative; 
+ 	margin-right:30px;
+ }
+ /*  图片的样式  */
+ .ifrswipt0 li .imgswipt0
+ {
+ 	width:217px;
+ 	cursor:pointer;padding:3px; 
+ 	border:solid 1px #eee;
+ } 
+ 
+ 
+ 
+ 
+ 
+ /*滑动截图2*/
+ .ifrswipt1 
+ {
+ 	width:223px;height:300px;
+ 	margin:0 auto;position:relative;
+ 	padding:3px 20px 3px 20px;
+ }
+ .ifrswipt1 .inner1
+ {
+ 	width:223px;height:300px;
+ 	overflow:visible;position:relative
+ }
+ /*外侧的大div  实际上 这个div  是根据有多少图片而设定的，这个应该通过JS来确定大小   */
+ .ifrswipt1 ul 
+ {
+ 	width:100050px;list-style:none;
+ 	overflow:hidden;position:absolute;
+ 	top:0px;left:0;margin:0;padding:0;
+ }
+ /*  这个li是 图片的最亲密的包装  */
+ .ifrswipt1 li 
+ {
+ 	width:223px;height:300px;
+ 	display:inline;line-height:168px;
+ 	float:left;position:relative; 
+ 	margin-right:30px;
+ }
+ /*  图片的样式  */
+ .ifrswipt1 li .imgswipt1
+ {
+ 	width:217px;
+ 	cursor:pointer;padding:3px; 
+ 	border:solid 1px #eee;
+ } 
+ 
+ 
+ 
+ 
+ /*滑动截图3*/
+ .ifrswipt2 
+ {
+ 	width:223px;height:300px;
+ 	margin:0 auto;position:relative;
+ 	padding:3px 20px 3px 20px;
+ }
+ .ifrswipt2 .inner2
+ {
+ 	width:223px;height:300px;
+ 	overflow:visible;position:relative
+ }
+ /*外侧的大div  实际上 这个div  是根据有多少图片而设定的，这个应该通过JS来确定大小   */
+ .ifrswipt2 ul 
+ {
+ 	width:100050px;list-style:none;
+ 	overflow:hidden;position:absolute;
+ 	top:0px;left:0;margin:0;padding:0;
+ }
+ /*  这个li是 图片的最亲密的包装  */
+ .ifrswipt2 li 
+ {
+ 	width:223px;height:300px;
+ 	display:inline;line-height:168px;
+ 	float:left;position:relative; 
+ 	margin-right:30px;
+ }
+ /*  图片的样式  */
+ .ifrswipt2 li .imgswipt2
+ {
+ 	width:217px;
+ 	cursor:pointer;padding:3px; 
+ 	border:solid 1px #eee;
+ } 
+ 
+ 
+ 
+ 
+ 
+ /*滑动截图4*/
+ .ifrswipt3 
+ {
+ 	width:223px;height:300px;
+ 	margin:0 auto;position:relative;
+ 	padding:3px 20px 3px 20px;
+ }
+ .ifrswipt3 .inner3
+ {
+ 	width:223px;height:300px;
+ 	overflow:visible;position:relative
+ }
+ /*外侧的大div  实际上 这个div  是根据有多少图片而设定的，这个应该通过JS来确定大小   */
+ .ifrswipt3 ul 
+ {
+ 	width:100050px;list-style:none;
+ 	overflow:hidden;position:absolute;
+ 	top:0px;left:0;margin:0;padding:0;
+ }
+ /*  这个li是 图片的最亲密的包装  */
+ .ifrswipt3 li 
+ {
+ 	width:223px;height:300px;
+ 	display:inline;line-height:168px;
+ 	float:left;position:relative; 
+ 	margin-right:30px;
+ }
+ /*  图片的样式  */
+ .ifrswipt3 li .imgswipt3
+ {
+ 	margin:0 auto;
+ 	width:217px;
+ 	cursor:pointer;padding:3px; 
+ 	border:solid 1px #eee;
+ } 
+ 
+ 
+ 
+
+ 
+ 
+ 

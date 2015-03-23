@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<log>
+	<user>
+		<id>
+			1
+		</id>
+		<name>
+			azxuwen
+		</name>
+		<password>
+			1234567
+		</password>
+		<time>2013-10-29</time>
+	</user>
+</log>
+<!-- 设置登录信息时间信息等等 -->

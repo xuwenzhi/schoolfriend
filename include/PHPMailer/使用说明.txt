@@ -1,0 +1,1 @@
+将本目录放入PHP服务器环境中，然后访问如：http://localhost/PHPMailer/sendMail.php即可。

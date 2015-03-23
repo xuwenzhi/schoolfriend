@@ -1,0 +1,154 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>永远的同校</title>
+<meta name="开发单位" content="哈尔滨理工大学" />
+<meta name="keywords" content="校友|校友网|永远的同校|哈尔滨电机制造学校|哈尔滨机电专科学校|哈尔滨工业高等专科学校|
+
+哈尔滨理工大学工业技术学院|哈尔滨科技大学|哈尔滨电工学院">
+<meta name="description" content="哈尔滨理工大学">
+<link href="./images/css/text.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body topmargin="0" leftmargin="0">
+<{php}>
+	require_once './top.php';
+<{/php}>
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0" class="bg1">
+  <tr>
+    <td width="11" height="11"></td>
+    <td></td>
+    <td width="11"></td>
+    <td width="650"></td>
+    <td width="11"></td>
+  </tr>
+  <tr>
+    <td height="11"></td>
+    <td valign="top">
+      <table border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="325" valign="top" class="border"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="97" height="29" align="center" background="images/1_09.jpg" class="zi-lan14b">热点文章</td>
+        <td width="218" align="right" background="images/1_09.jpg"><img src="images/more.gif" width="44" height="13" 
+
+align="absmiddle">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2" valign="top"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+        <{include_php file="hotnews.php"}>
+        </table>        </td>
+        </tr>
+    </table></td>
+      </tr>
+      </table>
+    </td>
+    <td></td>
+    <td valign="top" class="border">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="30" height="25" align="right" valign="bottom" background="images/bg1.jpg"><img 
+
+src="images/tb2.gif" align="absmiddle"></td>
+        <td width="88" align="center" valign="bottom" background="images/bg1.jpg" class="zi-hei14b">昔日趣事</td>
+        <td width="82%" align="right" background="images/bg1.jpg" class="zi-hui12"><img src="images/tb3.gif" 
+
+width="9" height="9"> 首页 > 昔日趣事 &nbsp;</td>
+      </tr>
+      <tr>
+        <td height="200" colspan="3" valign="top">
+          <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td height="5"></td>
+              <td>
+              <{php}>
+	        	if(isset($_SESSION['USERID'])){
+	        		echo "<td colspan='3' height='25' align='right'><a href='addFontThing.php'><font color='black' size='2'>添加昔日趣事</font></a></td>";
+	        	}else{
+	        		echo "<td colspan='3' height='25' align='right'><a href='#'><font color='black' size='2'>登录可添加昔日趣事</font></a></td>";
+	        	}
+       		 <{/php}>
+              </td>
+              <td></td>
+            </tr>
+            <!-- 这里将新闻公告显示 -->
+            <{foreach from=$XRQS item=THING}>
+            <tr>
+              <td width="15" height="22" align="center"><img src="images/tb1.jpg" width="3" height="3"></td>
+              <td align='left'><a href='thing_con.php?thing_id=<{$THING.ThingId}>' title='<{$THING.ThingTitle}>'><{$THING.ThingTitle}></a> <img src="images/new.gif" width="15" height="6" align="absmiddle"></td>
+              <td align='right'><{$THING.ThingTime|date_format:"%Y-%m-%d"}></td>
+            </tr>
+            <{/foreach}>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td height="22" colspan="3" align="center" bgcolor="#e6eaed">
+          	<!--  这里放分页  -->
+          	<{if $pageNow==1}>
+　				<a href="thing.php?pageNow=1"><font color=red>首页</font></a>　
+			<{else}>
+				<a href="thing.php?pageNow=1">首页</a>　
+			<{/if}>
+			<{*    希望在这里加入 一下翻10页的那种效果    <<    *}>
+			<{if $pageNow >10}>
+				<a href='thing.php?pageNow=<{$pageNow-10}>'><<</a>
+			<{/if}>
+			<{*   上一页   *}>
+			<{if $pageNow ne 1}>
+				<a href='thing.php?pageNow=<{$pageNow-1}>'>上一页</a>　
+			<{else}>
+				    上一页
+			<{/if}>
+
+			<{counter start=0 skip=1 print=false assign=mypage}>
+			<{section name=$sec loop=10}>   <{*      循环10次  希望下面的页面导航 只有十页     *}>
+			<{if $pageStart+$mypage < $pageCount}>
+        	   	<a href='thing.php?pageNow=<{$pageStart+$mypage+1}>'>[<{$pageStart+$mypage+1}>]</a>
+			<{/if}>
+			<{counter}>
+			<{/section}>
+
+			<{*   下一页   *}>
+			<{if $pageNow < $pageCount}>
+			　      <a href='thing.php?pageNow=<{$pageNow+1}>'>下一页</a>
+			<{else}>
+				下一页
+			<{/if}>
+
+
+			<{*    希望在这里加入 一下翻10页的那种效果    >>    *}>
+			<{if $pageNow <$pageCount-10}>
+			<a href='thing.php?pageNow=<{$pageNow+10}>'>>></a>
+			<{/if}>
+			<{if $pageNow == $pageCount}>
+　				<a href="thing.php?pageNow=<{$pageCount}>"><font color=red>末页</font></a>
+			<{else}>
+			<a href="thing.php?pageNow=<{$pageCount}>">末页</a>
+			<{/if}>
+　　　　			当前第<font color="red"><{$pageNow}></font>页 共<font color="red"><{$pageCount}></font>页
+          </td>
+        </tr>
+        <tr>
+          <td height="11"></td>
+        </tr>
+    </table>
+    </td>
+    <td></td>
+  </tr>
+  
+
+  
+  <tr>
+    <td height="11"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<{include file='bot.htm'}>
+
+</body>
+</html>

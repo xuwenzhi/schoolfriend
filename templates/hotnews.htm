@@ -1,0 +1,6 @@
+<{foreach from=$RDWZ item="hotnews"}>
+    <tr>
+        <td width="15" height="22" align="center"><img src="images/tb1.jpg" width="3" height="3"></td>
+        <td valign="bottom"><a href="news_con.php?news_id=<{$hotnews.NewsId}>&type=<{$hotnews.NewsCategory}>" title="<{$hotnews.NewsTitle}>"><{$hotnews.NewsTitle|truncate:"24":"...":true}></a></td>
+    </tr>
+<{/foreach}>

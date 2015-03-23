@@ -1,0 +1,108 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>永远的同校</title>
+<meta name="开发单位" content="哈尔滨理工大学" />
+<meta name="keywords" content="校友|校友网|永远的同校|哈尔滨电机制造学校|哈尔滨机电专科学校|哈尔滨工业高等专科学校|
+
+哈尔滨理工大学工业技术学院|哈尔滨科技大学|哈尔滨电工学院">
+<meta name="description" content="哈尔滨理工大学">
+<link href="./images/css/text.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body topmargin="0" leftmargin="0">
+<{php}>
+	require_once './top.php';
+<{/php}>
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0" class="bg1">
+	<!--供求信息-->
+	<tr>
+        <td width="30" height="25" align="right" valign="bottom" background="images/bg1.jpg"><img 
+
+src="images/tb2.gif" align="absmiddle"></td>
+        <td width="88" align="center" valign="bottom" background="images/bg1.jpg" class="zi-hei14b">供求信息</td>
+        <td width="82%" align="right" background="images/bg1.jpg" class="zi-hui12"><img src="images/tb3.gif" 
+
+width="9" height="9"> 首页 > 供求信息 &nbsp;</td>
+    </tr>
+    <tr>
+    	<td colspan="3">
+        <!--显示供求信息-->
+        	<table border="0" cellpadding="0" cellspacing="0">
+            <{foreach from=$GQXX item=INFORMATION}>
+			<tr>
+    			<td rowspan="2">
+	    	    <a href="information_con.php?information_id=<{$INFORMATION.InfoId}>"><img src="<{$INFORMATION.InfoPictureAdd}>" width="240" height="180"/></a>
+	        	</td>
+	    	    <td height="20" class="zi-lan14b">
+    	    	<a href="information_con.php?information_id=<{$INFORMATION.InfoId}>"><{$INFORMATION.InfoTitle|truncate:100}></a>
+	    	    </td>
+    	    	<td rowspan="2" width="163" align="center">
+	        	发布时间：<{$INFORMATION.InfoRTime|date_format:"%Y-%m-%d"}>
+		        </td>
+    		</tr>
+		    <tr>
+    		    <td height="80" width="600">
+        		<{$INFORMATION.InfoContent}>
+	        	</td>
+	    	</tr>
+            <tr>
+            <td height="10"></td>
+            </tr>
+            <{/foreach}>
+    	    </table>
+        </td>
+    </tr>
+    <tr>
+          <td height="22" colspan="3" align="center" bgcolor="#e6eaed">
+          	<!--  这里放分页  -->
+          	<{if $pageNow==1}>
+　				<a href="information.php?pageNow=1"><font color=red>首页</font></a>　
+			<{else}>
+				<a href="information.php?pageNow=1">首页</a>　
+			<{/if}>
+			<{*    希望在这里加入 一下翻10页的那种效果    <<    *}>
+			<{if $pageNow >10}>
+				<a href='information.php?pageNow=<{$pageNow-10}>'><<</a>
+			<{/if}>
+			<{*   上一页   *}>
+			<{if $pageNow ne 1}>
+				<a href='information.php?pageNow=<{$pageNow-1}>'>上一页</a>　
+			<{else}>
+				    上一页
+			<{/if}>
+
+			<{counter start=0 skip=1 print=false assign=mypage}>
+			<{section name=$sec loop=10}>   <{*      循环10次  希望下面的页面导航 只有十页     *}>
+			<{if $pageStart+$mypage < $pageCount}>
+        	   	<a href='information.php?pageNow=<{$pageStart+$mypage+1}>'>[<{$pageStart+$mypage+1}>]</a>
+			<{/if}>
+			<{counter}>
+			<{/section}>
+
+			<{*   下一页   *}>
+			<{if $pageNow < $pageCount}>
+			　      <a href='information.php?pageNow=<{$pageNow+1}>'>下一页</a>
+			<{else}>
+				下一页
+			<{/if}>
+
+
+			<{*    希望在这里加入 一下翻10页的那种效果    >>    *}>
+			<{if $pageNow <{$pageCount-10}>
+			<a href='information.php?pageNow=<{$pageNow+10}>'>>></a>
+			<{/if}>
+			<{if $pageNow == $pageCount}>
+　				<a href="information.php?pageNow=<{$pageCount}>"><font color=red>末页</font></a>
+			<{else}>
+			<a href="information.php?pageNow=<{$pageCount}>">末页</a>
+			<{/if}>
+　　　　			当前第<font color="red"><{$pageNow}></font>页 共<font color="red"><{$pageCount}></font>页
+          </td>
+        </tr>
+</table>
+<{include file='bot.htm'}>
+
+</body>
+</html>

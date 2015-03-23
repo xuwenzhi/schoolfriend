@@ -1,0 +1,160 @@
+body,td,th {
+	font-family:宋体;
+	font-size: 12px;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+form {
+	margin: 0px;
+}
+input {
+	font-family: "宋体";
+	font-size: 14px;
+}
+.input1 {
+	color: #174B73;
+	background-image: url(../images/bt1.gif);
+	height: 21px;
+	border: 1px solid #6C8DB3;
+	padding-top: 3px;
+	margin: 5px;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	color: #666666;
+}
+
+.font1 {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.font2 {
+	color: #2A437B;
+	text-decoration: none;
+	font-weight: bold;
+}
+.font3 {
+	color: #FF0000;
+}
+
+
+.menu1 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.tr1 {
+	color: #364B63;
+	background-image: url(../images/tr1.gif);
+	height: 28px;
+}
+
+
+#mainTop1 {
+	background-image: url(../images/main1.gif);
+	height: 40px;
+	width: 100%;
+	margin: 0px;
+	padding-top: 6px;
+	padding-left: 6px;
+
+}
+#mainTop2 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #0F62A4;
+	float: left;
+	padding: 5px;
+}
+#mainTop3 {
+
+
+}
+#mainTop4 {
+	background-image: url(../images/main2.jpg);
+	background-repeat: no-repeat;
+	height: 16px;
+	width: 90%;
+	margin-bottom: 0px;
+	background-color: #F6F9FD;
+	padding-top: 10px;
+	padding-left: 20px;
+	color: #0D537D;
+	text-decoration: none;
+}
+#mainTop5 {
+	background-color: #0033CC;
+	height: 30px;
+	width: 100%;
+	background-image: url(../images/main2.jpg);
+	background-repeat: no-repeat;
+}
+#mainpage {
+	padding: 2px;
+	height: 25px;
+	width: 100%;
+	border: 1px solid #E5F3FC;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	text-align: right;
+}
+#mainpage a {
+	font-weight: bold;
+	color: #3366CC;
+}
+
+#nojilu {
+	color: #0D537D;
+	background-color: #F6F9FD;
+	height: 30px;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: 1px solid #E5F3FC;
+	padding-top: 7px;
+	text-align: center;
+}
+
+
+
+#mainZ {
+	padding: 5px;
+	width: 100%;
+}
+#tijiao {
+	width: 100%;
+	margin-top: 5px;
+	padding-left: 0px;
+}
+#adminbottom {
+	text-align: center;
+	width: 100%;
+	margin-top: 10px;
+	padding: 4px;
+	background-color: #F7F7F7;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #EFEFEF;
+	border-bottom-color: #EFEFEF;
+}
+#adminbottom a {
+	color: #E0E0E0;
+	text-decoration: none;
+}
+/*   bknews.php 中的分页   */
+#Page{
+	position:absolute;
+	left:170px;
+	top:670px;
+}
