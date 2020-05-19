@@ -119,7 +119,7 @@ width="9" height="9"> 首页 > 新闻公告 &nbsp;</td>
 			<{/if}>
 
 			<{counter start=0 skip=1 print=false assign=mypage}>
-			<{section name=$sec loop=10}>   <{*      循环10次  希望下面的页面导航 只有十页     *}>
+			<{section name=sec loop=10}>   <{*      循环10次  希望下面的页面导航 只有十页     *}>
 			<{if $pageStart+$mypage < $pageCount}>
         	   	<a href='news.php?pageNow=<{$pageStart+$mypage+1}>&NewsCategory=<{$NewsCategory|default:'11111':true}>&NewsTitleKey=<{$NewsTitleKey}>'>[<{$pageStart+$mypage+1}>]</a>
 			<{/if}>
@@ -135,7 +135,7 @@ width="9" height="9"> 首页 > 新闻公告 &nbsp;</td>
 
 
 			<{*    希望在这里加入 一下翻10页的那种效果    >>    *}>
-			<{if $pageNow <{$pageCount-10}>
+			<{if $pageNow <$pageCount-10}>
 			<a href='news.php?pageNow=<{$pageNow+10}>&NewsCategory=<{$NewsCategory|default:'11111':true}>&NewsTitleKey=<{$NewsTitleKey}>'>>></a>
 			<{/if}>
 			<{if $pageNow == $pageCount}>

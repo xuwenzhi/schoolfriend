@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once 'include/smarty/Smarty.class.php';
-$smarty = new Smarty();
+require_once 'include/init.php';
+
 $smarty->left_delimiter = "<{";
 $smarty->right_delimiter = "}>";
 require_once 'include/SqlHelper.class.php';

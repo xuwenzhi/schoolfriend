@@ -1,7 +1,7 @@
 <?php
 	require_once 'judgeLogin.php';  //引文件     判断用户是否登录 和用户恶意修改url
-	require_once 'include/smarty/Smarty.class.php';
-	$smarty = new Smarty();
+	require_once 'include/init.php';
+	
 	$smarty->left_delimiter = "<{";
 	$smarty->right_delimiter = "}>";
 	

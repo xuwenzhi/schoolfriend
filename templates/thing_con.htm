@@ -34,9 +34,10 @@
 
 align="absmiddle">&nbsp;</td>
       </tr>
+
       <tr>
         <td colspan="2" valign="top"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
-        <{foreach from=$hotthing item="hotthing"}>
+        <{foreach from=hotthing item="hotthing"}>
     <tr>
         <td width="15" height="22" align="center"><img src="images/tb1.jpg" width="3" height="3"></td>
         <td valign="bottom"><a href="thing_con.php?thing_id=<{$hotthing.ThingId}>" title="<{$hotthing.thingTitle}>"><{$hotthing.ThingTitle|truncate:"24":"...":true}></a></td>
@@ -71,7 +72,7 @@ width="9" height="9"> 首页 > 昔日趣事 &nbsp;</td>
             <!-- 这里将昔日趣事显示 -->
             
             <tr>
-              <{foreach from=$Thing_Con item="Thing_con"}>
+              <{foreach from=Thing_Con item="Thing_con"}>
               <td colspan="3">
               	<center>
               	<h3><{$Thing_con.ThingTitle}></h3>

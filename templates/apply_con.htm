@@ -35,7 +35,7 @@ align="absmiddle">&nbsp;</td>
       </tr>
       <tr>
         <td colspan="2" valign="top"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
-          <{foreach from=$hotapply item="hotapply"}>
+          <{foreach from=hotapply item="hotapply"}>
     <tr>
         <td width="15" height="22" align="center"><img src="images/tb1.jpg" width="3" height="3"></td>
         <td valign="bottom"><a href="apply_con.php?apply_id=<{$hotapply.ApplyId}>" title="<{$hotapply.ApplyUnit}>"><{$hotapply.ApplyUnit|truncate:"24":"...":true}></a></td>

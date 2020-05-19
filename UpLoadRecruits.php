@@ -1,8 +1,8 @@
 <?php
 //前台用于上传图片的文件   希望做的灵活一些
 session_start();
-require_once 'include/smarty/Smarty.class.php';
-$smarty = new Smarty();
+require_once 'include/init.php';
+
 $smarty->left_delimiter = "<{";
 $smarty->right_delimiter = "}>";
 require_once 'include/SqlHelper.class.php';

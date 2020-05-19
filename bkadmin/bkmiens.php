@@ -7,11 +7,12 @@ include_once '../include/ComFunction.php';
 $sqlHelper = new SqlHelper();
 $assPage = new AssPage();
 $assPage->pageSize=3; //每页显示3张
-if(isset($_GET['pageNow'])){
+if (isset($_GET['pageNow'])) {
 	$assPage->pageNow = $_GET['pageNow'];
-}else{
+} else {
 	$assPage->pageNow = 0;
 }
+
 //查询出昔日趣事的个数
 $sql_count = "Select count(PhotoId) from t_photo";
 //下面建立查询当前页中显示数据

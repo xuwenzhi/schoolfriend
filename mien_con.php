@@ -5,9 +5,9 @@
  * 如果从miens.php  进入该页面 只会获取到该照片的 类别 所以这里要进行一定的处理
  */
 session_start();
-require_once 'include/smarty/Smarty.class.php';
+require_once 'include/init.php';
 require_once 'include/SqlHelper.class.php';
-$smarty = new Smarty();
+
 $smarty->left_delimiter = "<{";
 $smarty->right_delimiter = "}>";
 $sqlHelper = new SqlHelper();

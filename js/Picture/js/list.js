@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var curPic=6,nextPic=7,prePic=-1;preShowPic=-1;
+	var curPic=0,nextPic=1,prePic=-1;preShowPic=-1;
 	var allPic=$(".scrolltab .ulBigPic li").length;			   
 	//mouseover效果
 	function liMouseOn(){

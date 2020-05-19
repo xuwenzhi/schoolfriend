@@ -7,7 +7,7 @@
 <?php
 	require_once 'include/SqlHelper.class.php';
 	require_once 'include/smarty/smarty.class.php';
-	$smarty = new Smarty();
+	
 	$sqlHelper = new SqlHelper();
 	$sql = "Select * from t_class";
 	$arr = $sqlHelper->execute_dql2($sql);

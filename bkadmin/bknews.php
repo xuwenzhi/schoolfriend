@@ -18,7 +18,9 @@
 		$pageCount = $assPage->pageNow*$assPage->pageSize;
 		$temp_page = $assPage->pageNow*$assPage->pageSize;
 		$sql_News_pageNow= "Select * from t_news order by NewsOrder desc,NewsId desc limit $temp_page , $assPage->pageSize";
+
 		$sqlHelper->excute_dql_asspage($sql_count, $sql_News_pageNow, $assPage);
+		
 		function getNewList(){
 			global $assPage;
 			for($i=0; $i<count($assPage->pageArr); $i++){

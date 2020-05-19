@@ -9,12 +9,13 @@
 	//快速注册 只写入  用户名和密码     或者邮箱
 	//如果填写邮箱 就写入
 	if($_POST['UserEmail']!=""){
-		$sql_insert_user = "Insert Into t_sfuser(SFUserLogin, SFUserKey,SFUserTime,SFULandTime,SFULandTimes,SFUserAdd,SFUserEmail) Values('".$UserName."', '".$PassWord."', NOW(), NOW(), 0, 'upload/images/defaultPhoto.jpg', '$_POST[UserEmail]')";
+		$sql_insert_user = "Insert Into t_sfuser(SFUserLogin, SFUserKey,SFUserTime,SFULandTime,SFULandTimes,SFUserAdd,SFUserEmail,SFUserManage,SFUserExamine) Values('".$UserName."', '".$PassWord."', NOW(), NOW(), 0, 'upload/images/defaultPhoto.jpg', '$_POST[UserEmail]', 0, 0)";
 	}
 	//如果没有填写邮箱 就不写入
 	else{
 		$sql_insert_user = "Insert Into t_sfuser(SFUserLogin, SFUserKey,SFUserTime,SFULandTime,SFULandTimes,SFUserAdd) Values('".$UserName."', '".$PassWord."', NOW(), NOW(), 0, 'upload/images/defaultPhoto.jpg')";
 	}
+
 	$result_insert_user = $sqlHelper->execute_dql($sql_insert_user);
 	if($result_insert_user){
 		//注册成功

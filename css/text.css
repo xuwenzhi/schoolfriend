@@ -1,0 +1,162 @@
+/*
+文字大小12px
+行高150%
+颜色#575757
+*/
+td {
+	font-size: 12px;
+	line-height: 150%;
+	color: #575757;
+}
+/*
+普通超链接文字12px
+行高150%
+颜色#686868
+无下划线
+*/
+a {
+	font-size: 12px;
+	line-height: 150%;
+	color: #686868;
+	text-decoration: none;
+}
+/*
+鼠标放在连接上时
+文字颜色改变为#3674c0
+*/
+a:hover {
+	font-size: 12px;
+	line-height: 150%;
+	text-decoration: none;
+	color: #3674C0;
+}
+/*
+文字14px 行高150%
+颜色白色
+无下划线 文字间距0.2em
+*/
+.a-bai14b {
+	font-size: 14px;
+	line-height: 150%;
+	color: #ffffff;
+	text-decoration: none;
+	letter-spacing: 0.2em;
+}
+/*
+鼠标放在连接上时
+文字14px 行高150%
+颜色灰色
+无下划线 文字间距0.2em
+*/
+.a-bai14b:hover {
+	font-size: 14px;
+	line-height: 150%;
+	text-decoration: none;
+	letter-spacing: 0.2em;
+	color: #333333;
+}
+/*
+文字14px
+加粗 颜色白色
+文字间距离0.2em
+*/
+.zi-bai14b {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	letter-spacing: 0.2em;
+}
+/*
+文字14px
+加粗 颜色蓝色
+文字间距0.2em
+*/
+.zi-lan14b {
+	font-size: 14px;
+	font-weight: bold;
+	color: #004485;
+	letter-spacing: 0.2em;
+}
+/*
+文字14px
+加粗 颜色黑色
+字体黑体
+*/
+.zi-hei14b {
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+	font-family: "黑体";
+}
+/*
+文字12px
+颜色灰色
+*/
+.zi-hui12 {
+	font-size: 12px;
+	color: #8f8f8f;
+}
+/*
+内边距1px
+边框1px 颜色#1b77cc
+*/
+.border {
+	padding: 1px;
+	border: 1px solid #1b77cc;
+}
+/*
+内边距1px
+边框3px 双线显示
+用作相框
+*/
+.border-tp {
+	padding: 1px;
+	border: 2px double #a8c9e8;
+}
+/*
+背景图片地址
+背景图片仅在横向上平铺
+背景图片靠在上面
+*/
+.bg1 {
+	background-image: url(../1_06.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+/*
+提交和重置按钮的图片
+高度29px 宽度69px
+*/
+.an-tj {
+	background-image: url(../an.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 29px;
+	width: 69px;
+}
+/*
+边框1px 颜色#1b77cc
+*/
+.biaoge {
+	border: 1px solid #1b77cc;
+}
+/*
+图片去掉border
+*/
+img{
+	border:0;
+}
+/*
+ * 今昔风采 文件  miens.php  中图片的显示方式  通过 div实现 浮动
+ */
+#Mien_Pic_Show{
+	width:210px;
+	height:230px;
+	float:left;
+	border:1px solid blue;
+}
+#Mien_Pic_Show img{
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:5px;
+}

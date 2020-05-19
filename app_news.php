@@ -1,7 +1,7 @@
 <?php
 	
 	session_start();
-	require_once 'include/smarty/Smarty.class.php';
+	require_once 'include/init.php'';
 	require_once 'include/SqlHelper.class.php';
 	require_once 'include/ComFunction.php';  //主要用到里面的 get_newstype_from_t_basecode()
 	$sqlHelper = new SqlHelper();

@@ -102,7 +102,7 @@ width="9" height="9"> 首页 > 招聘应聘&nbsp;</td>
 			<{/if}>
 
 			<{counter start=0 skip=1 print=false assign=mypage}>
-			<{section name=$sec loop=10}>   <{*      循环10次  希望下面的页面导航 只有十页     *}>
+			<{section name=sec loop=10}>   <{*      循环10次  希望下面的页面导航 只有十页     *}>
 			<{if $pageStart+$mypage < $pageCount}>
         	   	<a href='recruits.php?pageNow=<{$pageStart+$mypage+1}>'>[<{$pageStart+$mypage+1}>]</a>
 			<{/if}>
@@ -117,9 +117,10 @@ width="9" height="9"> 首页 > 招聘应聘&nbsp;</td>
 			<{/if}>
 
 
+
 			<{*    希望在这里加入 一下翻10页的那种效果    >>    *}>
 			<{if $pageNow <$pageCount-10}>
-			<a href='recruits.php?pageNow=<{$pageNow+10}>'>>></a>
+e			<a href='recruits.php?pageNow=<{$pageNow+10}>'>>></a>
 			<{/if}>
 			<{if $pageNow == $pageCount}>
 　				<a href="recruits.php?pageNow=<{$pageCount}>"><font color=red>末页</font></a>

@@ -1,0 +1,264 @@
+<?php
+/* Smarty version 3.1.33, created on 2020-05-19 07:45:50
+  from '/data/wwwroot/school.xuwenzhi.com/templates/addFontThing.htm' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5ec31e2e097d97_32298838',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '2011a2f48604ee94e70d4288a2d4c84a65a675a9' => 
+    array (
+      0 => '/data/wwwroot/school.xuwenzhi.com/templates/addFontThing.htm',
+      1 => 1589845548,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:bot.htm' => 1,
+  ),
+),false)) {
+function content_5ec31e2e097d97_32298838 (Smarty_Internal_Template $_smarty_tpl) {
+?><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>永远的同校</title>
+<meta name="开发单位" content="哈尔滨理工大学" />
+<meta name="keywords" content="校友|校友网|永远的同校|哈尔滨电机制造学校|哈尔滨机电专科学校|哈尔滨工业高等专科学校|
+
+哈尔滨理工大学工业技术学院|哈尔滨科技大学|哈尔滨电工学院">
+<meta name="description" content="哈尔滨理工大学">
+<link href="css/text.css" rel="stylesheet" type="text/css" />
+<?php echo '<script'; ?>
+ type="text/javascript" src="js/jquery1.8.3.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ type="text/javascript" src="include/editor/editor.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ type="text/javascript" src="include/ckfinder/ckfinder.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ type='text/javascript' src="include/ckeditor/ckeditor.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ language="javascript" type="text/javascript" src="js/DatePicker/WdatePicker.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ type="text/javascript" src="js/fonts.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ language="javascript">
+	$(document).ready(function(){
+		//用户点击确定 上传
+		  $("#UploadPicSubmit").click(function(event){
+			  var file = document.getElementById('ImgName').value; //取得用户添加的图片名称
+			  //如果没有选择图片
+			   if(file == ""){
+			       alert("请选择照片");
+			       event.stopPropagation(); 
+			       return false;
+			   }
+			  //这里对图片的扩展名进行验证   这里是一段正则表达式
+		      if(!/\.(gif|jpg|jpeg|png|GIF|JPG|JPEG|PNG)$/i.test(file)){
+		          alert("图片类型必须是.gif,jpeg,jpg,png中的一种");
+		          event.stopPropagation(); 
+		          return false;
+		      }
+		      //原本想这里这通过JS来判断 图片描述的内容的长度是否标准 但是应该是由于 cdfinder的插件的原因  取不到值
+		      //下面提交表单
+		      $("#uploadForm").submit();//提交表单 
+		  });
+	});
+<?php echo '</script'; ?>
+>
+<style type='text/css'>
+.select-bar select{width:150px;height:100px;border:2px #A0A0A4 outset;padding:4px;position:relative;left:10px;float:left;}
+.btn-bar{position:relative;left:20px;}
+.selectbox{width:500px;height:220px;margin:40px auto 0 auto;}
+.selectbox div{float:left;}
+.selectbox .select-bar{padding:0 20px;}
+.selectbox .select-bar select{width:150px;height:200px;border:4px #A0A0A4 outset;padding:4px;}
+.selectbox .btn{width:50px; height:30px; margin-top:10px; cursor:pointer;}
+#select1{
+	width:150px;height:100px;border:2px #A0A0A4 outset;padding:4px;position:relative;left:10px;float:left;
+}
+#ClassMember{
+	position:relative;
+	left:210px;
+	top:-112px;
+}
+</style>
+</head>
+
+<body topmargin="0" leftmargin="0">
+<?php 
+	require_once './top.php';
+?>
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0" class="bg1">
+  <tr>
+    <td width="11" height="11"></td>
+    <td></td>
+    <td width="11"></td>
+    <td width="650"></td>
+    <td width="11"></td>
+  </tr>
+  <tr>
+    <td height="11"></td>
+    <td valign="top">
+      <table border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="325" valign="top" class="border"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="97" height="29" align="center" background="images/1_09.jpg" class="zi-lan14b">热点文章</td>
+        <td width="218" align="right" background="images/1_09.jpg"><img src="images/more.gif" width="44" height="13" 
+
+align="absmiddle">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2" valign="top"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <?php include_once ('/data/wwwroot/school.xuwenzhi.com/hotnews.php');?>
+
+        </table>        </td>
+        </tr>
+    </table></td>
+      </tr>
+      </table>
+    </td>
+    <td></td>
+    <td valign="top" class="border">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="30" height="25" align="right" valign="bottom" background="images/bg1.jpg"><img 
+
+src="images/tb2.gif"></td>
+        <td width="88" align="center" valign="bottom" background="images/bg1.jpg" class="zi-hei14b">昔日趣事</td>
+        <td width="82%" align="right" background="images/bg1.jpg" class="zi-hui12"><img src="images/tb3.gif" 
+
+width="9" height="9" align="absmiddle"> 首页 > 昔日趣事&nbsp;</td>
+      </tr>
+      <tr height='10'>
+      <td></td>
+      </tr>
+      <tr>
+        <td colspan="3" valign="top">
+		<table width="98%"  align="center" border='0' cellpadding="0" cellspacing="0">
+        <form action="include/addFontThingControl.php"  enctype="multipart/form-data" method='post' id='uploadForm'>
+            	<tr>
+					  <td width="60" align="right" >标题</td>
+					  <td width="577"><input type="text" name="Title" id="advTea"  style="width:100%"/></td>
+					</tr>
+   				<tr>
+  					  <td height="163" align="right">内容</td>
+    				  <td><textarea name="Content" cols="80" rows="200px" id="textcontent"></textarea></td>
+				   	<!--配置ckfinder--><?php echo '<script'; ?>
+ type="text/javascript">
+				   	var editor = CKEDITOR.replace( 'textcontent' );
+				  	  CKFinder.setupCKEditor( editor, { basePath : '../include/ckfinder/', rememberLastFolder : false, toolbar : 'Basic' } ) ;  
+				    <?php echo '</script'; ?>
+>
+				</tr>
+				<tr>
+            	<td width="60" align='right'>发生时间</td>
+            	<td width="577">
+            	　<input type='text' class='Wdate' id='FFirstDate' onClick='WdatePicker()' size='21' name='ThingEndTime'  style='width:150px' />
+            	</td>
+            	</tr>
+            	<tr>
+            		<td width="60" align='right'>相关的人　</td>
+            		<td width="577">&nbsp;
+            		<?php 
+            			//1  判断是否已经加入了班级  
+            			//2 如果没有 加入班级 也没有关注的班级 得到相应的提示
+            			//3 如果加入了班级 将所在班级 或者关注班级的 成员
+            			$sqlHelper = new SqlHelper();
+            			$UserId = $_SESSION['USERID'];
+            		echo "<div class='select-bar'>";
+            		echo "<select multiple='multiple' id='select2' name='RelatedId[]'>";
+					echo "</select>";
+					echo "</div>";
+					echo "<div class='btn-bar'>";
+					echo "<span id='add'><input type='button' class='btn' value='<'/></span><br />";
+					echo "<span id='add_all'><input type='button' class='btn' value='<<'/></span><br />";
+					echo "<span id='remove'><input type='button' class='btn' value='>'/></span><br />";
+					echo "<span id='remove_all'><input type='button' class='btn' value='>>'/></span>";
+					echo "</div>";
+            				//获取该用户所在班级的Id 和 关注班级的 Id
+            				$sql_get_user_class = "select ClassId,ClassFriendId from t_sfuser where SFUserId = $UserId";
+            				$arr_get_user_class = $sqlHelper ->execute_dql2($sql_get_user_class);
+            				
+            				//用户所在班级 或者 关注班级的 ID  例如 74,54,34
+            				if($arr_get_user_class[0]['ClassFriendId']!=""){
+            					$ClassId = $arr_get_user_class[0]['ClassId'].",".$arr_get_user_class[0]['ClassFriendId'];
+            				}else{
+            					$ClassId = $arr_get_user_class[0]['ClassId'];
+            				}
+            				//下面if语句中  将上面的 74,54,34 存放进数组
+            				if(strlen($ClassId)!=0){
+            					//将用户所在班级的Id号  存入 $arr_classid 数组中
+								if(substr_count($arr_get_user_class[0]['ClassId'], ',') != 0){
+									$arr_classid = explode(',',$arr_get_user_class[0]['ClassId']);
+								}else{
+									$arr_classid[0] = $arr_get_user_class[0]['ClassId'];
+								}
+							
+							echo "　　　";
+							// 用户所在班级的 id 已经存放进  $arr_classid 数组中
+							//下面将所在班级的  人 拿出来
+							$sql_get_user_useclass = "Select SFUserId, SFUserTrueName from t_sfuser where ";
+							for($i = 0; $i<count($arr_classid); $i++){
+								$sql_get_user_useclass .= "(ClassId like '%".$arr_classid[$i]."%' or ClassId like '%".$arr_classid[$i]."' or ClassId like '".$arr_classid[$i]."%')";
+								if($i < count($arr_classid)-1){
+									$sql_get_user_useclass.=" or ";
+								}
+							}
+							$arr_get_class_member = $sqlHelper->execute_dql2($sql_get_user_useclass);
+							echo "<div id='ClassMember'>";
+							echo "<select name='ClassMember' id='select1' multiple='multiple'>";
+							for($i = 0; $i<count($arr_get_class_member); $i++){
+								echo "<option value='".$arr_get_class_member[$i]['SFUserId']."'>".$arr_get_class_member[$i]['SFUserTrueName']."</option>";
+							}
+							echo "</select></div>";
+							}else{
+								echo "还没有人加入班级噢，通知他/她们加入吧...";
+							}
+
+							
+							
+            			
+            		?>
+            	</td>
+            	</tr>
+				<tr>
+					<td align='center' colspan='2'><input type='submit'  name='submitAddThing' value='添加趣事' /></td>
+				</tr>
+        </form>
+        </table>
+        		
+        </td>
+        </tr>
+        <tr>
+          <td height="11"></td>
+        </tr>
+    </table>
+    
+    <td></td>
+  </tr>
+  <tr>
+    <td height="11"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<?php $_smarty_tpl->_subTemplateRender('file:bot.htm', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+
+</body>
+</html>
+<?php }
+}

@@ -3,7 +3,7 @@
 	$username = $_POST['NewID'];  //取得用户输入的用户名
 	require_once '../SqlHelper.class.php';
 	$sqlHelper = new SqlHelper();
-	$sql_check_user = "Select count(SFUserId) From t_sfuser Where SFUserLogin = '".$username."'";
+	$sql_check_user = "Select count(SFUserId) AS cnt From t_sfuser Where SFUserLogin = '".$username."'";
 	$arr = $sqlHelper->execute_dql2($sql_check_user);
-	echo $arr[0][0];
+	echo $arr[0]['cnt'];
 ?>

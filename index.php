@@ -1,12 +1,10 @@
 <?php
 	session_start();//开启session
-	require_once 'include/smarty/Smarty.class.php';
+	require_once 'include/init.php';
 	require_once 'include/SqlHelper.class.php';
 	$sqlHelper = new SqlHelper();
-	$smarty = new Smarty();
 	$smarty->left_delimiter = "<{";
 	$smarty->right_delimiter = "}>";
-	
 	//调新闻公告
 	$sql_news_index = "Select NewsId, NewsTitle,NewsAddTime,NewsCategory From t_news order by NewsOrder desc,NewsId desc Limit 0, 13";
 	$arr_news_index = $sqlHelper->execute_dql2($sql_news_index);

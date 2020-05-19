@@ -1,6 +1,7 @@
 <?php
-require_once 'include/smarty/Smarty.class.php';
-$smarty = new Smarty();//配置smarty
+//require 'include/init.php';
+require_once 'include/smarty/libs/SmartyBC.class.php';
+$smarty = new SmartyBC();
 $smarty->left_delimiter = "<{";
 $smarty->right_delimiter = "}>";
 
@@ -18,5 +19,3 @@ $smarty->assign("NowUserName", $_SESSION['USER']);
 $smarty->assign("UserId", $_SESSION['USERID']);
 
 $smarty->display("top.htm"); //分配模板
-
-?>

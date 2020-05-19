@@ -8,13 +8,14 @@
 	//这里同样遵循注册时的要求 改变验证逻辑
 	$sql_verify_login = "Select SFUserKey,SFUserId From t_sfuser Where SFUserLogin = '".$UserLoginName."'";
 	$arr_virify_login = $sqlHelper->execute_dql2($sql_verify_login);
+
 	$from_db_pass = $arr_virify_login[0]['SFUserKey'];  //取得数据库中该账户的密码
 	//获取到该用户的ID
 	if($from_db_pass == $UserLoginPass){
 		//核实成功
 		session_start();
-		session_register('USER'); //session变量      登录姓名
-		session_register('USERID');	//session变量      对应数据库的ID
+		//session_register('USER'); //session变量      登录姓名
+		//session_register('USERID');	//session变量      对应数据库的ID
 		$_SESSION['USER'] = $UserLoginName;
 		$_SESSION['USERID'] = $arr_virify_login[0]['SFUserId'];
 		

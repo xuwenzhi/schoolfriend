@@ -48,8 +48,8 @@
 		if(isset($_POST['USERID'])){
 			$UserId = $_POST['USERID'];
 		}
-		$sql_add_person_pic = "insert into t_photo(SFUserId, PhotoType,PhotoAdd,PhotoPresent,Visibility,PhotoTime,PhotoTimes)";
-		$sql_add_person_pic .=" values($UserId,$photoType, '".$img_file_way."','".$photoContent."', 1, now(), 0 )";
+		$sql_add_person_pic = "insert into t_photo(SFUserId, PhotoType,PhotoAdd,PhotoPresent,Visibility,PhotoTime,PhotoTimes, PhotoTitle)";
+		$sql_add_person_pic .=" values($UserId,$photoType, '".$img_file_way."','".$photoContent."', 1, now(), 0, '')";
 		$add_result = $sqlHelper->execute_dql($sql_add_person_pic);
 		if($add_result){
 			if(isset($_GET['do']) && $_GET['do']=='update'){
