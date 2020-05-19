@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-19 07:33:47
+/* Smarty version 3.1.33, created on 2020-05-19 08:17:39
   from '/data/wwwroot/school.xuwenzhi.com/templates/hotnews.htm' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec31b5b93d174_41428595',
+  'unifunc' => 'content_5ec325a3989970_57138910',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ec31b5b93d174_41428595 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ec325a3989970_57138910 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/data/wwwroot/school.xuwenzhi.com/include/smarty/libs/plugins/modifier.truncate.php','function'=>'smarty_modifier_truncate',),));
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['RDWZ']->value, 'hotnews');
 if ($_from !== null) {

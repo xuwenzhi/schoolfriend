@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-19 08:03:55
+/* Smarty version 3.1.33, created on 2020-05-19 08:16:41
   from '/data/wwwroot/school.xuwenzhi.com/templates/myMenu.htm' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec3226b5a1f30_94901341',
+  'unifunc' => 'content_5ec32569309dc1_86891141',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ec3226b5a1f30_94901341 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ec32569309dc1_86891141 (Smarty_Internal_Template $_smarty_tpl) {
 ?><head>
 <?php echo '<script'; ?>
  type="text/javascript" src="js/Personal.js" ><?php echo '</script'; ?>

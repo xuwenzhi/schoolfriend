@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-19 07:33:47
+/* Smarty version 3.1.33, created on 2020-05-19 08:17:39
   from '/data/wwwroot/school.xuwenzhi.com/templates/news.htm' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec31b5b92cc43_70953072',
+  'unifunc' => 'content_5ec325a3981913_30979156',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:bot.htm' => 1,
   ),
 ),false)) {
-function content_5ec31b5b92cc43_70953072 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ec325a3981913_30979156 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/data/wwwroot/school.xuwenzhi.com/include/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),1=>array('file'=>'/data/wwwroot/school.xuwenzhi.com/include/smarty/libs/plugins/function.counter.php','function'=>'smarty_function_counter',),));
 ?>
 <html>

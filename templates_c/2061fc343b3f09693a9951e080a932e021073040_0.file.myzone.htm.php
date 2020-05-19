@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-19 08:02:48
+/* Smarty version 3.1.33, created on 2020-05-19 08:16:41
   from '/data/wwwroot/school.xuwenzhi.com/templates/myzone.htm' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec32228a0cf53_36650212',
+  'unifunc' => 'content_5ec325692fb428_68310870',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:bot.htm' => 1,
   ),
 ),false)) {
-function content_5ec32228a0cf53_36650212 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ec325692fb428_68310870 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-19 07:33:47
+/* Smarty version 3.1.33, created on 2020-05-19 08:16:41
   from '/data/wwwroot/school.xuwenzhi.com/templates/bot.htm' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ec31b5b940257_13012029',
+  'unifunc' => 'content_5ec32569325c06_19072767',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ec31b5b940257_13012029 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ec32569325c06_19072767 (Smarty_Internal_Template $_smarty_tpl) {
 ?><table width="1003" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td height="70" align="center" background="images/1_24.jpg">地址：哈尔滨市南岗区学府路52号 150080 电话：0451-86392073 邮编：150080<br />
